@@ -6,19 +6,30 @@ const BaseLayout = () => {
       <header className="d-flex align-items-center bg-light">
         <h1>
           <Link className="text-decoration-none text-dark" to="/">
-            Purrfect Adoption
+            Cat Heaven
           </Link>
         </h1>
         <div className="flex-grow-1"></div>
         <nav>
-          <ul className="nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/available-cats">
-                Available Cats
-              </Link>
-            </li>
-          </ul>
-        </nav>
+  <ul className="nav">
+    <li className="nav-item">
+      <Link className="nav-link" to="/available-cats">
+        Available Cats
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/contact-us">
+        Contact Us
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/about-us">
+        About Us
+      </Link>
+    </li>
+  </ul>
+</nav>
+
       </header>
       <main id="content">
         <Outlet />
